@@ -10,12 +10,12 @@
 		3B8B8C102B0376BF004A68F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B8C0F2B0376BF004A68F6 /* AppDelegate.swift */; };
 		3B8B8C122B0376BF004A68F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B8C112B0376BF004A68F6 /* SceneDelegate.swift */; };
 		3B8B8C142B0376BF004A68F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B8C132B0376BF004A68F6 /* ViewController.swift */; };
-		3B8B8C172B0376BF004A68F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8B8C152B0376BF004A68F6 /* Main.storyboard */; };
 		3B8B8C192B0376C1004A68F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8B8C182B0376C1004A68F6 /* Assets.xcassets */; };
 		3B8B8C1C2B0376C1004A68F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8B8C1A2B0376C1004A68F6 /* LaunchScreen.storyboard */; };
 		3B8B8C272B0376C1004A68F6 /* Turbo_Native_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B8C262B0376C1004A68F6 /* Turbo_Native_DemoTests.swift */; };
 		3B8B8C312B0376C1004A68F6 /* Turbo_Native_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B8C302B0376C1004A68F6 /* Turbo_Native_DemoUITests.swift */; };
 		3B8B8C332B0376C1004A68F6 /* Turbo_Native_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B8C322B0376C1004A68F6 /* Turbo_Native_DemoUITestsLaunchTests.swift */; };
+		3BED13582B04BD4900A48912 /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 3BED13572B04BD4900A48912 /* Turbo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		3B8B8C0F2B0376BF004A68F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8B8C112B0376BF004A68F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3B8B8C132B0376BF004A68F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3B8B8C162B0376BF004A68F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B8B8C182B0376C1004A68F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8B8C1B2B0376C1004A68F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8B8C1D2B0376C1004A68F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BED13582B04BD4900A48912 /* Turbo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,6 @@
 				3B8B8C0F2B0376BF004A68F6 /* AppDelegate.swift */,
 				3B8B8C112B0376BF004A68F6 /* SceneDelegate.swift */,
 				3B8B8C132B0376BF004A68F6 /* ViewController.swift */,
-				3B8B8C152B0376BF004A68F6 /* Main.storyboard */,
 				3B8B8C182B0376C1004A68F6 /* Assets.xcassets */,
 				3B8B8C1A2B0376C1004A68F6 /* LaunchScreen.storyboard */,
 				3B8B8C1D2B0376C1004A68F6 /* Info.plist */,
@@ -143,6 +142,9 @@
 			dependencies = (
 			);
 			name = "Turbo Native Demo";
+			packageProductDependencies = (
+				3BED13572B04BD4900A48912 /* Turbo */,
+			);
 			productName = "Turbo Native Demo";
 			productReference = 3B8B8C0C2B0376BF004A68F6 /* Turbo Native Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 3B8B8C032B0376BF004A68F6;
+			packageReferences = (
+				3BED13562B04BD4800A48912 /* XCRemoteSwiftPackageReference "turbo-ios" */,
+			);
 			productRefGroup = 3B8B8C0D2B0376BF004A68F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +238,6 @@
 			files = (
 				3B8B8C1C2B0376C1004A68F6 /* LaunchScreen.storyboard in Resources */,
 				3B8B8C192B0376C1004A68F6 /* Assets.xcassets in Resources */,
-				3B8B8C172B0376BF004A68F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3B8B8C152B0376BF004A68F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B8B8C162B0376BF004A68F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3B8B8C1A2B0376C1004A68F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +442,6 @@
 				INFOPLIST_FILE = "Turbo Native Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +468,6 @@
 				INFOPLIST_FILE = "Turbo Native Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BED13562B04BD4800A48912 /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BED13572B04BD4900A48912 /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BED13562B04BD4800A48912 /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B8B8C042B0376BF004A68F6 /* Project object */;
 }
